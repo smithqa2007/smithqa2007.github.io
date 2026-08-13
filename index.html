@@ -1,135 +1,513 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <title>Thomas Smith - QA Analyst & Help Desk Support</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Thomas Smith | QA, Event Operations & Technical Support</title>
+
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --accent: #1f5f99;
+      --accent-dark: #17466f;
+      --border: #d9dee5;
+      --dark: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      width: min(1000px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 48px 0 34px;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #d9e1ea;
+    }
+
+    nav {
+      margin-top: 24px;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 34px 0 60px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--dark);
+      font-size: 1.7rem;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      color: var(--dark);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 8px;
+      margin: 6px 8px 6px 0;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+    }
+
+    .button.secondary {
+      background: #4b5563;
+    }
+
+    .featured {
+      border: 2px solid var(--accent);
+    }
+
+    .eyebrow {
+      margin: 0 0 4px;
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .82rem;
+    }
+
+    .case-study-title {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 8px;
+    }
+
+    .case-study-subtitle {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 800px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .stat {
+      background: var(--dark);
+      color: white;
+      border-radius: 9px;
+      padding: 18px 10px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.7rem;
+      line-height: 1.1;
+    }
+
+    .stat span {
+      display: block;
+      color: #d5dbe3;
+      font-size: .8rem;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0;
+    }
+
+    .skill {
+      background: #eaf2f8;
+      border: 1px solid #caddeb;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: .88rem;
+    }
+
+    .festival-year {
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+      margin-top: 18px;
+    }
+
+    .festival-year:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    audio {
+      width: min(100%, 540px);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 10px 0 35px;
+    }
+
+    @media (max-width: 700px) {
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      section {
+        padding: 22px 18px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Thomas Smith</h1>
+<header>
+  <div class="container">
+    <h1>Thomas Smith</h1>
+    <p>QA Analyst | Event Operations | Technical Support</p>
 
-<p>
-QA Analyst | Help Desk Support | Software Testing
-</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#case-study">Featured Case Study</a>
+      <a href="#festival">Event Experience</a>
+      <a href="#support">Support Demos</a>
+      <a href="#resume">Resume</a>
+      <a href="#linkedin">LinkedIn</a>
+    </nav>
+  </div>
+</header>
 
-<h2>About Me</h2>
+<main class="container">
 
-<p>
-Experienced QA Analyst and Help Desk professional with experience in software testing,
-customer support, and troubleshooting. Returning to the workforce after
-raising my family and actively pursuing QA and IT Support opportunities.
-</p>
+  <section id="about">
+    <h2>About Me</h2>
 
-<h2>Resume</h2>
+    <p>
+      QA, event operations, and customer support professional with experience in software testing,
+      technical troubleshooting, live event production, virtual event operations, digital content,
+      and cross-functional coordination. I bring a detail-focused QA mindset to event and operational
+      work, with hands-on experience managing schedules, performers, volunteers, promotional materials,
+      audience workflows, and live technical production.
+    </p>
 
-<p>
-<a href="Thomas_Smith_QA_Professional_Resume.pdf">Download Resume</a>
-</p>
+    <p>
+      I am returning to the workforce after raising my family and am pursuing remote opportunities
+      in event operations, field marketing, QA, customer support, and program coordination.
+    </p>
+  </section>
 
-<h2>Certifications</h2>
+  <section id="case-study" class="featured">
+    <p class="eyebrow">Featured Event Production Case Study</p>
 
-<ul>
-<li>Google Agile Project Management</li>
-<li>Google Digital Marketing & E-Commerce</li>
-<li>Atlassian Jira Fundamentals</li>
-<li>IBM Java Programming for Beginners</li>
-<li>Introduction to Software Quality Assurance</li>
-</ul>
+    <h2 class="case-study-title">Plano Virtual Comedy Festival 2020</h2>
 
-<h2>Technical Support Demonstrations</h2>
+    <p class="case-study-subtitle">
+      How a three-person production team transformed an in-person comedy festival into a
+      four-day virtual event during COVID-19.
+    </p>
 
-<h3>Help Desk VPN Troubleshooting Demo</h3>
+    <div class="stats">
+      <div class="stat">
+        <strong>100+</strong>
+        <span>Performers</span>
+      </div>
 
-<audio controls>
-  <source src="ThomasSmithHelpdeskCallExample.m4a" type="audio/mp4">
-  Your browser does not support the audio element.
-</audio>
+      <div class="stat">
+        <strong>21</strong>
+        <span>States</span>
+      </div>
 
-<p>
-This demonstration shows VPN troubleshooting including connectivity verification,
-service status checks, and authentication resolution.
-</p>
+      <div class="stat">
+        <strong>4</strong>
+        <span>Countries</span>
+      </div>
 
-<h3>Password Reset Support Call</h3>
+      <div class="stat">
+        <strong>17</strong>
+        <span>Shows</span>
+      </div>
 
-<audio controls>
-  <source src="Passwordreset.mp4" type="audio/mp4">
-  Your browser does not support the audio element.
-</audio>
+      <div class="stat">
+        <strong>4</strong>
+        <span>Days</span>
+      </div>
+    </div>
 
-<p>
-This demonstration shows a password reset and account access troubleshooting process, 
-including user verification, account status checks, and successful authentication recovery.
-</p>
+    <p>
+      When COVID-19 made an in-person festival impossible, I helped a three-person core
+      production team rebuild the Plano Comedy Festival as a fully virtual event.
+    </p>
 
+    <p>
+      My responsibilities included performer selection, event scheduling, website QA,
+      social media, promotional graphics, performer badges, volunteer coordination,
+      attendee workflows, and live technical production. We used Zoom, OBS, Eventbrite,
+      Discord, Powtoon, and custom digital assets to create a complete remote festival
+      experience rather than simply placing comedians in video calls.
+    </p>
+
+    <div class="skills">
+      <span class="skill">Event Logistics</span>
+      <span class="skill">Program Operations</span>
+      <span class="skill">Remote Production</span>
+      <span class="skill">Eventbrite</span>
+      <span class="skill">OBS</span>
+      <span class="skill">Zoom</span>
+      <span class="skill">Discord</span>
+      <span class="skill">Website QA</span>
+      <span class="skill">Social Media</span>
+      <span class="skill">Volunteer Coordination</span>
+      <span class="skill">Digital Assets</span>
+      <span class="skill">Live Troubleshooting</span>
+    </div>
+
+    <a
+      class="button"
+      href="Thomas_Smith_Plano_Virtual_Comedy_Festival_Case_Study.pdf"
+      target="_blank"
+      rel="noopener">
+      View Full Case Study
+    </a>
+
+    <a
+      class="button secondary"
+      href="https://planomagazine.com/plano-comedy-fest-2020/"
+      target="_blank"
+      rel="noopener">
+      Read 2020 Media Coverage
+    </a>
+  </section>
+
+  <section id="festival">
     <h2>Plano Comedy Festival Leadership & Operations</h2>
 
-<p>
-Served as a Board Member and Event Operations Coordinator for the Plano Comedy Festival,
-helping plan, promote, and execute multi-day comedy festivals featuring nationally touring
-headliners, regional talent, virtual events, and live productions. Responsibilities included
-event operations, project coordination, marketing support, website and social media quality
-assurance, performer communications, and volunteer management.
-</p>
+    <p>
+      Served as a Board Member and Producer for the Plano Comedy Festival, helping plan,
+      promote, and execute multi-day comedy festivals featuring nationally touring
+      headliners, regional performers, virtual events, workshops, specialty programming,
+      and live productions.
+    </p>
 
-<h3>2018 Inaugural Plano Comedy Festival</h3>
+    <p>
+      Responsibilities included event operations, program coordination, marketing support,
+      website and social media QA, performer communications, promotional materials,
+      volunteer coordination, scheduling, and live event execution.
+    </p>
 
-<ul>
-    <li>Dates: June 8–9, 2018</li>
-    <li>3 Locations</li>
-    <li>5 Shows</li>
-    <li>20 Performers</li>
-    <li>Featured Local Headliners</li>
-    <li><a href="https://planomagazine.com/inaugural-plano-comedy-festival/" target="_blank">Read Article</a></li>
-</ul>
+    <div class="festival-year">
+      <h3>2018 Inaugural Plano Comedy Festival</h3>
+      <ul>
+        <li>Dates: June 8-9, 2018</li>
+        <li>3 locations</li>
+        <li>5 shows</li>
+        <li>20 performers</li>
+        <li>Featured local headliners</li>
+        <li>
+          <a href="https://planomagazine.com/inaugural-plano-comedy-festival/" target="_blank" rel="noopener">
+            Read Article
+          </a>
+        </li>
+      </ul>
+    </div>
 
-<h3>2019 Plano Comedy Festival</h3>
+    <div class="festival-year">
+      <h3>2019 Plano Comedy Festival</h3>
+      <ul>
+        <li>Dates: September 12-15, 2019</li>
+        <li>3 locations</li>
+        <li>13 shows</li>
+        <li>77 performers</li>
+        <li>
+          Headliners included Martin Urbano, Paul Varghese, KeLanna Spiller,
+          Richard Douglas Jones, Jasmine Ellis, Barry Whitewater, and Eric Eaton
+        </li>
+        <li>
+          <a href="https://planomagazine.com/2019-plano-comedy-festival-lineup/" target="_blank" rel="noopener">
+            Read Article
+          </a>
+        </li>
+      </ul>
+    </div>
 
-<ul>
-    <li>Dates: September 12–15, 2019</li>
-    <li>3 Locations</li>
-    <li>13 Shows</li>
-    <li>77 Performers</li>
-    <li>Headliners: Martin Urbano, Paul Varghese, KeLanna Spiller, Richard Douglas Jones, Jasmine Ellis, Barry Whitewater, and Eric Eaton</li>
-    <li><a href="https://planomagazine.com/2019-plano-comedy-festival-lineup/" target="_blank">Read Article</a></li>
-</ul>
+    <div class="festival-year">
+      <h3>2020 Plano Virtual Comedy Festival</h3>
+      <ul>
+        <li>Dates: October 1-4, 2020</li>
+        <li>Fully virtual event produced during the COVID-19 pandemic</li>
+        <li>17 shows over four days</li>
+        <li>100+ performers from 21 states and 4 countries</li>
+        <li>2 virtual workshops and 2 virtual after-parties</li>
+        <li>Included stand-up, musical comedy, sketch/alternative comedy, family programming, and a tournament-style Roast Battle</li>
+        <li>
+          Headliners included Laurie Kilmartin, Mary Kennedy, Roxxy Haze,
+          Karith Foster, Steve Hofstetter, and Kurt Braunohler
+        </li>
+        <li>
+          <a href="#case-study">View Featured Case Study</a>
+        </li>
+      </ul>
+    </div>
 
-<h3>2020 Virtual Plano Comedy Festival</h3>
+    <div class="festival-year">
+      <h3>2021</h3>
+      <ul>
+        <li>Festival cancelled due to pandemic conditions</li>
+      </ul>
+    </div>
 
-<ul>
-    <li>Dates: October 1–4, 2020</li>
-    <li>Virtual Event During Pandemic</li>
-    <li>20 Shows</li>
-    <li>100 Performers</li>
-    <li>Headliners: Mary Kennedy, Roxxy Haze, Steve Hofstetter, Karith Foster, Kurt Braunohler, and Laurie Kilmartin</li>
-    <li>Co-produced and supported a fully virtual multi-day comedy festival</li>
-    <li><a href="https://planomagazine.com/plano-comedy-fest-2020/" target="_blank">Read Article</a></li>
-</ul>
+    <div class="festival-year">
+      <h3>2022 Plano Comedy Festival</h3>
+      <ul>
+        <li>Dates: October 13-16, 2022</li>
+        <li>2 locations</li>
+        <li>30 shows</li>
+        <li>140 performers</li>
+        <li>
+          Headliners included Justin Foster, Mike E. Winfield, Matthew Broussard,
+          Angelia Walker, Jackie Kashian, Dean Lewis, Ralph Barbosa, Eric Eaton,
+          KeLanna Spiller, Rudy Rush, Flip Orley, Paul Varghese, and CJ Starr
+        </li>
+        <li>
+          <a href="https://www.dallasobserver.com/arts-culture/plano-has-the-most-succesul-comedy-festival-in-dfw-14988387/" target="_blank" rel="noopener">
+            Read Article
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-<h3>2021</h3>
+  <section id="support">
+    <h2>Technical Support Demonstrations</h2>
 
-<ul>
-    <li>Festival Cancelled Due to Pandemic Conditions</li>
-</ul>
+    <h3>Help Desk VPN Troubleshooting Demo</h3>
 
-<h3>2022 Plano Comedy Festival</h3>
+    <audio controls>
+      <source src="ThomasSmithHelpdeskCallExample.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
 
-<ul>
-    <li>Dates: October 13–16</li>
-    <li>2 Locations</li>
-    <li>30 Shows</li>
-    <li>140 Performers</li>
-    <li>Headliners Included Justin Foster, Mike E. Winfield, Matthew Broussard, Angelia Walker, Jackie Kashian, Dean Lewis, Ralph Barbosa, Eric Eaton, KeLanna Spiller, Rudy Rush, Flip Orley, Paul Varghese, and CJ Starr</li>
-    <li><a href="https://www.dallasobserver.com/arts-culture/plano-has-the-most-succesul-comedy-festival-in-dfw-14988387/" target="_blank">Read Article</a></li>
-</ul>
+    <p>
+      This demonstration shows VPN troubleshooting including connectivity verification,
+      service status checks, and authentication resolution.
+    </p>
 
+    <h3>Password Reset Support Call</h3>
 
-<h2>LinkedIn</h2>
+    <audio controls>
+      <source src="Passwordreset.mp4" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
 
-<p>
-<a href="https://www.linkedin.com/in/thomassmithqa/">View LinkedIn Profile</a>
-</p>
+    <p>
+      This demonstration shows a password reset and account access troubleshooting process,
+      including user verification, account status checks, and successful authentication recovery.
+    </p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+
+    <p>
+      <a class="button" href="Thomas_Smith_QA_Professional_Resume.pdf" target="_blank">
+        View / Download Resume
+      </a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+
+    <ul>
+      <li>Google Agile Project Management</li>
+      <li>Google Digital Marketing & E-Commerce</li>
+      <li>Atlassian Jira Fundamentals</li>
+      <li>IBM Java Programming for Beginners</li>
+      <li>Introduction to Software Quality Assurance</li>
+    </ul>
+  </section>
+
+  <section id="linkedin">
+    <h2>LinkedIn</h2>
+
+    <p>
+      <a
+        class="button"
+        href="https://www.linkedin.com/in/thomassmithqa/"
+        target="_blank"
+        rel="noopener">
+        View LinkedIn Profile
+      </a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    Thomas Smith | QA • Event Operations • Technical Support
+  </div>
+</footer>
 
 </body>
 </html>
