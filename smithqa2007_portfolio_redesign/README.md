@@ -1,1 +1,0 @@
-# smithqa2007.github.io
